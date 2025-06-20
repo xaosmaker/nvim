@@ -35,7 +35,7 @@ return {
 			"eslint",
 			"pylsp",
 			-- "clangd",
-			"hydra_lsp",
+			-- "hydra_lsp",
 		}
 		-- Brief aside: **What is LSP?**
 		--
