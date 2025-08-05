@@ -18,6 +18,9 @@ return {
 		local tools = {
 			"stylua", -- Used to format Lua code
 			"emmet-language-server",
+			"black",
+			"prettierd",
+			"isort",
 		}
 		local lsp_servers = {
 
@@ -34,8 +37,9 @@ return {
 			"docker_compose_language_service",
 			"eslint",
 			"pylsp",
-			-- "clangd",
+			"clangd",
 			-- "hydra_lsp",
+			--
 		}
 		-- Brief aside: **What is LSP?**
 		--
