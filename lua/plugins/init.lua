@@ -1,5 +1,7 @@
--- You can add your own plugins here or in other files in this directory!
---  I promise not to create any merge conflicts in this directory :)
---
--- See the kickstart.nvim README for more information
-return {}
+require("plugins.nvim-tree")
+require("plugins.mason")
+require("plugins.treesitter")
+require("plugins.telescope")
+require("plugins.colorshceme")
+require("plugins.autopairs")
+require("plugins.lazydev")
