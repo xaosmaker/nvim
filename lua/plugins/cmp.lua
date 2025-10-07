@@ -1,4 +1,5 @@
 return { -- Autocompletion
+
 	"hrsh7th/nvim-cmp",
 	event = "InsertEnter",
 	dependencies = {
@@ -34,6 +35,7 @@ return { -- Autocompletion
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
 		"Jezda1337/nvim-html-css",
+		"github/copilot.vim",
 	},
 	config = function()
 		-- See `:help cmp`
