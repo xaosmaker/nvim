@@ -17,6 +17,7 @@ return { -- You can easily change to a different colorscheme.
 	-- end,
 	---- Using Packer
 	"navarasu/onedark.nvim",
+	version = "v0.1.0",
 	priority = 1000,
 	config = function()
 		-- Lua
