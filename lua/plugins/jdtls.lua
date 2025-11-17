@@ -1,8 +1,8 @@
 return {
 	"mfussenegger/nvim-jdtls",
-	options = {
-		root_dir = vim.fs.root(0, { "gradlew", ".git", "mvnw", vim.fn.getcwd() }),
-	},
+	-- options = {
+	-- 	root_dir = vim.fs.root(0, { "gradlew", ".git", "mvnw" }),
+	-- },
 	config = function(_, opts)
 		-- Start or attach JDTLS with your options
 		-- -- get the color of functions from the colorscheme
