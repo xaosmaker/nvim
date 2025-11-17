@@ -14,11 +14,11 @@ return {
 		-- vim.api.nvim_set_hl(0, "@type.java", { fg = func_color })
 
 		-- 💜 Highlight overrides (make Java keywords purple)
-		vim.api.nvim_set_hl(0, "@keyword.java", { fg = "#C678DD", bold = true })
-		vim.api.nvim_set_hl(0, "@keyword.modifier.java", { fg = "#C678DD", bold = true })
-		vim.api.nvim_set_hl(0, "@type.java", { fg = "#C678DD", bold = true })
+		vim.api.nvim_set_hl(0, "@keyword.java", { fg = "#C678DD", bold = true, italic = true })
+		vim.api.nvim_set_hl(0, "@keyword.modifier.java", { fg = "#C678DD", bold = true, italic = true })
+		vim.api.nvim_set_hl(0, "@type.java", { fg = "#C678DD", bold = true, italic = true })
 		-- (If you ever re-enable semantic highlighting)
-		vim.api.nvim_set_hl(0, "@lsp.type.keyword.java", { fg = "#C678DD", bold = true })
-		vim.api.nvim_set_hl(0, "@lsp.type.modifier.java", { fg = "#C678DD", bold = true })
+		vim.api.nvim_set_hl(0, "@lsp.type.keyword.java", { fg = "#C678DD", bold = true, italic = true })
+		vim.api.nvim_set_hl(0, "@lsp.type.modifier.java", { fg = "#C678DD", bold = true, italic = true })
 	end,
 }
