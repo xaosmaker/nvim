@@ -36,8 +36,9 @@ return {
 			"bashls",
 			"docker_compose_language_service",
 			"eslint",
-			"pylsp",
+			-- "pylsp",
 			"clangd",
+			"gopls",
 			-- "hydra_lsp",
 			--
 		}
