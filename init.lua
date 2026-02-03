@@ -2,5 +2,4 @@ require("config.lazy")
 require("config.autocmd")
 require("config.opts")
 require("config.remaps")
-require("lsp")
-
+require("config.enable")
