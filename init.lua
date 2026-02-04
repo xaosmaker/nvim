@@ -2,8 +2,6 @@ require("xaosmaker.core.autocmd")
 require("xaosmaker.core.opts")
 require("xaosmaker.core.remaps")
 require("xaosmaker.lazy")
-require("xaosmaker.lspCmp")
-
 
 
 vim.diagnostic.config(
