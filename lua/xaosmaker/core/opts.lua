@@ -1,4 +1,4 @@
-vim.opt.completeopt = { "menuone", "popup", "menu", "noinsert" }
+vim.opt.completeopt = { "popup", "noinsert" }
 vim.opt.relativenumber = true
 vim.opt.number = true
 

@@ -7,7 +7,8 @@ return {
       "ts_ls",
       "vtsls",
       "vue_ls",
-      "tailwindcss"
+      "tailwindcss",
+      "eslint",
     },
   },
   dependencies = {
@@ -21,8 +22,8 @@ return {
         ensure_installed = {
           "prettierd",
           "biome",
-        }
-      }
+        },
+      },
     },
     "neovim/nvim-lspconfig",
   },
