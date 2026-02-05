@@ -2,10 +2,6 @@
 ---@class vim.lsp.ClientConfig
 return {
   filetypes = {
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
     "vue",
   },
   settings = {
