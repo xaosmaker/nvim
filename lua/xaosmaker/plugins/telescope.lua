@@ -12,16 +12,14 @@ return { -- Fuzzy Finder (files, lsp, etc)
         return vim.fn.executable("make") == 1
       end,
     },
-
   },
   config = function()
     local telescope = require("telescope")
 
-
     telescope.setup({
       defaults = {
         path_display = { "smart" },
-      }
+      },
     })
 
     -- Enable Telescope extensions if they are installed
@@ -38,5 +36,31 @@ return { -- Fuzzy Finder (files, lsp, etc)
     vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "[S]earch by [G]rep" })
     vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
     vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+
+    vim.keymap.set("n", "gd", require("telescope.builtin").lsp_definitions, { desc = "[G]oto [D]efinition" })
+
+    -- Find references for the word under your cursor.
+    vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, { desc = "[G]oto [R]eferences" })
+
+    -- Jump to the implementation of the word under your cursor.
+    --  Useful when your language has ways of declaring types without an actual implementation.
+    vim.keymap.set(
+      "n",
+      "gI",
+      require("telescope.builtin").lsp_implementations,
+      { desc = "[G]oto [I]mplementation" }
+    )
+    vim.keymap.set(
+      "n",
+      "<leader>D",
+      require("telescope.builtin").lsp_type_definitions,
+      { desc = "Type [D]efinition" }
+    )
+
+    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
+
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
+
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "[G]oto [D]eclaration" })
   end,
 }

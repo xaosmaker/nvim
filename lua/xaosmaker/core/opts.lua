@@ -1,4 +1,3 @@
-
 vim.opt.completeopt = { "menuone", "noselect", "popup", "menu", "noinsert" }
 vim.opt.relativenumber = true
 vim.opt.number = true
@@ -42,12 +41,8 @@ vim.opt.splitbelow = true
 -- colorcolumn show at 80 chars
 vim.opt.colorcolumn = "80"
 
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
--- backspace
 vim.opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
 -- clipboard
