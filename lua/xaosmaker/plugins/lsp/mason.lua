@@ -9,6 +9,7 @@ return {
       "vue_ls",
       "tailwindcss",
       "eslint",
+      "jsonls",
     },
   },
   dependencies = {
