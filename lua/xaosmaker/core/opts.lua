@@ -1,4 +1,3 @@
-
 vim.opt.completeopt = { "menuone", "noselect", "popup", "menu", "noinsert" }
 vim.opt.relativenumber = true
 vim.opt.number = true
@@ -7,7 +6,7 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
 vim.opt.expandtab = true
-vim.opt.smartindent = true
+vim.opt.smartindent = false
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -17,7 +16,6 @@ vim.opt.wrap = false
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
@@ -52,7 +50,6 @@ vim.opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line
 
 -- clipboard
 vim.opt.clipboard:append("unnamedplus") -- use system clipboard as default register
-
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
