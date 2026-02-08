@@ -33,6 +33,13 @@ return {
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },
+			per_filetype = {
+				sql = { "dadbod" },
+				-- optionally inherit from the `default` sources
+			},
+			providers = {
+				dadbod = { module = "vim_dadbod_completion.blink" },
+			},
 		},
 
 		--
