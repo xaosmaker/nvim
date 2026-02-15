@@ -4,10 +4,10 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		opts = {
 			ensure_installed = {
-				"vue_ls",
+				-- "vue_ls",
 				"gopls",
 				"ts_ls",
-				"vtsls",
+				-- "vtsls",
 				"bashls",
 				"cssls",
 				"docker_compose_language_service",
