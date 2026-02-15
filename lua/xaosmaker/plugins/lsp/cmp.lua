@@ -42,10 +42,10 @@ return {
 			-- Completion sources (required, in order of priority)
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
-				{ name = "luasnip" },
 				{ name = "buffer" },
 				{ name = "cmdline" },
 				{ name = "path" },
+				{ name = "luasnip" },
 			}),
 		})
 	end,
