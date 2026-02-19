@@ -42,6 +42,7 @@ return {
 			-- Completion sources (required, in order of priority)
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
+				{ name = "vim-dadbod-completion" },
 				{ name = "buffer" },
 				-- { name = "cmdline" },
 				{ name = "bufname" },
