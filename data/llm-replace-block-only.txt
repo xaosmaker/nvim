@@ -1,0 +1,4 @@
+The selected text is a Placeholder replace it with the code you will write.
+Before applying the changes read the #{buffer} and check what changed then apply the changes and DON'T OVERWRITE MY WORK!
+Then @{insert_edit_into_file}.
+
