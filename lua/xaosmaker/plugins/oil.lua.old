@@ -1,3 +1,4 @@
+-- this plugin lag a lot in large repo
 return {
 	"stevearc/oil.nvim",
 	---@module 'oil'
