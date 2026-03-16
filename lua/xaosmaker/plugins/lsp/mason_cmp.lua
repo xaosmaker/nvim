@@ -16,6 +16,7 @@ return {
 				"html",
 				"jsonls",
 				"lua_ls",
+				"yamlls",
 				-- "luals",
 				-- "nginx-language-server",
 				"sqlls",
