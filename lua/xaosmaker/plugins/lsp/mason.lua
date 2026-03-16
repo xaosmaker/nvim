@@ -1,6 +1,5 @@
 return {
 	{
-
 		"mason-org/mason-lspconfig.nvim",
 		opts = {
 			ensure_installed = {
@@ -16,7 +15,8 @@ return {
 				"eslint",
 				"html",
 				"jsonls",
-				-- "luals",
+				"lua_ls",
+				"yamlls",
 				-- "nginx-language-server",
 				"sqlls",
 				"tailwindcss",
