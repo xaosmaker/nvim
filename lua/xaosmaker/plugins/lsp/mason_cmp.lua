@@ -17,6 +17,7 @@ return {
 				"jsonls",
 				"lua_ls",
 				"yamlls",
+				"clangd",
 				-- "luals",
 				-- "nginx-language-server",
 				"sqlls",
