@@ -19,7 +19,7 @@ return {
 				"yamlls",
 				"clangd",
 				-- "luals",
-				-- "nginx-language-server",
+				"nginx_language_server",
 				"sqlls",
 				"tailwindcss",
 				"emmet_ls",
@@ -42,6 +42,7 @@ return {
 				packages = {
 					"stylua",
 					"prettierd",
+					"nginx-config-formatter",
 					"biome",
 				},
 			},
