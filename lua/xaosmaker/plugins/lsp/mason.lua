@@ -17,8 +17,8 @@ return {
 				"jsonls",
 				"lua_ls",
 				"yamlls",
-				-- "nginx-language-server",
-				"sqlls",
+				"nginx_language_server",
+				-- "sqlls",
 				"tailwindcss",
 				"emmet_ls",
 			},
@@ -40,6 +40,7 @@ return {
 				packages = {
 					"stylua",
 					"prettierd",
+					"nginx-config-formatter",
 					"biome",
 				},
 			},

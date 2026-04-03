@@ -32,14 +32,23 @@ return {
 
 		-- (Default) Only show the documentation popup when manually triggered
 		completion = {
+			menu = {
+				draw = {
+					columns = {
+						{ "label", "label_description", gap = 1 },
+						{ "kind_icon", "kind" },
+					},
+					treesitter = { "lsp" },
+				},
+			},
 			documentation = { auto_show = true, auto_show_delay_ms = 100 },
-			list = { selection = { preselect = false } },
+			list = { selection = { preselect = false, auto_insert = false } },
 		},
 
 		-- Default list of enabled providers defined so that you can extend it
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
 		sources = {
-			default = { "lsp", "path", "buffer", "snippets" },
+			default = { "lsp", "dadbod", "path", "buffer", "snippets" },
 			per_filetype = {
 				sql = { "dadbod" },
 				-- optionally inherit from the `default` sources
