@@ -22,6 +22,7 @@ return {
 				typescript = formatter,
 				go = { "gopls" },
 				vue = formatter,
+				nginx = { "nginxfmt" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
