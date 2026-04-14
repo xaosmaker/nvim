@@ -6,6 +6,7 @@ return {
 				-- "vue_ls",
 				"gopls",
 				"ts_ls",
+				"pylsp",
 				-- "vtsls",
 				"bashls",
 				"cssls",
