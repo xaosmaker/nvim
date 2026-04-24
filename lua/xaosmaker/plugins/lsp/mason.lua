@@ -4,6 +4,7 @@ return {
 		opts = {
 			ensure_installed = {
 				-- "vue_ls",
+				"clangd",
 				"gopls",
 				"ts_ls",
 				"pylsp",
@@ -22,6 +23,8 @@ return {
 				-- "sqlls",
 				"tailwindcss",
 				"emmet_ls",
+				-- "omnisharp",
+				"csharp_ls",
 			},
 		},
 		dependencies = {
@@ -43,6 +46,10 @@ return {
 					"prettierd",
 					"nginx-config-formatter",
 					"biome",
+
+					-- debugers
+					"go-debug-adapter",
+					"netcoredbg",
 				},
 			},
 		},
