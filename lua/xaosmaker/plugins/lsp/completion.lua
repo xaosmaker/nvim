@@ -1,12 +1,10 @@
 return {
 	"saghen/blink.cmp",
 	-- optional: provides snippets for the snippet source
-	dependencies = { "rafamadriz/friendly-snippets" },
+	dependencies = { "rafamadriz/friendly-snippets", "giuxtaposition/blink-cmp-copilot" },
 
 	-- use a release tag to download pre-built binaries
-	version = "1.*",
-	-- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
-
+	version = "1.*", -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
 	---@module 'blink.cmp'
 	---@type blink.cmp.Config
 	opts = {
@@ -47,7 +45,21 @@ return {
 		-- Default list of enabled providers defined so that you can extend it
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
 		sources = {
-			default = { "lsp", "dadbod", "path", "buffer", "snippets" },
+			default = {
+				"lsp",
+				"dadbod",
+				"path",
+				"buffer",
+				"snippets",
+				providers = {
+					copilot = {
+						name = "copilot",
+						module = "blink-cmp-copilot",
+						score_offset = 100,
+						async = true,
+					},
+				},
+			},
 			-- per_filetype = {
 			-- 	sql = { "lsp", "dadbod", "buffer" },
 			-- 	-- optionally inherit from the `default` sources
