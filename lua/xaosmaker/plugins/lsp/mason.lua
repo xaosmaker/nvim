@@ -24,7 +24,7 @@ return {
 				"tailwindcss",
 				"emmet_ls",
 				-- "omnisharp",
-				"csharp_ls",
+				-- "csharp_ls",
 			},
 		},
 		dependencies = {
