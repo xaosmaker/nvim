@@ -23,10 +23,9 @@ if vim.fn.executable("ollama") == 1 then
 				adapters = {
 					ollama = function()
 						return require("codecompanion.adapters").extend("ollama", {
-							name = "qwen3-coder-next:cloud",
 							schema = {
 								model = {
-									default = "qwen3-coder-next:cloud",
+									default = "qwen2.5-coder:7b",
 								},
 							},
 						})

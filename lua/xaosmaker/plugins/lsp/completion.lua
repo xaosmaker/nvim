@@ -51,14 +51,7 @@ return {
 				"path",
 				"buffer",
 				"snippets",
-				providers = {
-					copilot = {
-						name = "copilot",
-						module = "blink-cmp-copilot",
-						score_offset = 100,
-						async = true,
-					},
-				},
+				"copilot",
 			},
 			-- per_filetype = {
 			-- 	sql = { "lsp", "dadbod", "buffer" },
@@ -66,6 +59,12 @@ return {
 			-- },
 			providers = {
 				dadbod = { module = "vim_dadbod_completion.blink" },
+				copilot = {
+					name = "copilot",
+					module = "blink-cmp-copilot",
+					score_offset = 100,
+					async = true,
+				},
 			},
 		},
 
