@@ -23,6 +23,7 @@ return {
 				go = { "gopls" },
 				vue = formatter,
 				nginx = { "nginxfmt" },
+				sql = { "pg_format" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
